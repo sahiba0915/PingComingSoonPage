@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Libre Franklin', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+  margin-top: 60px;
+  text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1 span{
+    color:hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: 510;
+}
+
+form{
+    position: relative;
+}
+
+
+form.error input {
+	border: 2px solid hsl(0, 93%, 68%);
+}
+
+
+input {
+    font-size: 18px;
+    padding: 15px 25px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    width: 459px;
+    outline: none;
+}
+
+input::placeholder{
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 50px;
+    width: 180px;
+    padding: 15px 25px;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.dashboard {
+    max-width: 650px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+section {
+    text-align:center;
+    margin-top: 10px;
+}
+
+
+.icons li{
+    display: inline;
+    list-style: none;
+    padding: 10px 15px;
+    color: hsl(223, 87%, 63%);
+    font-size: 15px;
+    margin: 0;
+    border: 1px solid   hsl(220, 17%, 90%);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1em 0;
+}
+
+.icons li:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+
+small {
+    color:hsl(0, 0%, 59%);
+    font-size: 15px;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 370px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+form.error small {
+    color: hsl(0, 93%, 68%);
+	display: block;
+}
+
+.foot {
+    margin-top: 10px;
+    font-size: 14px;
+    color:  hsl(0, 0%, 59%);
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        max-width: 100%;
+    }
+
+    button {
+        width: 459px;
+        margin: 0;
+        margin-top: 40px;
+    }
+    
+    small {
+        color:hsl(0, 0%, 59%);
+        font-size: 15px;
+        display: none;
+        left: 100px;
+
+    }
+
+    
+    
+}
+
